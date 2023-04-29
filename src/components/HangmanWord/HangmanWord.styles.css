@@ -10,7 +10,3 @@
 .split-word {
     border-bottom: .1em solid black;
 }
-
-.status-word {
-    visibility: hidden;
-}

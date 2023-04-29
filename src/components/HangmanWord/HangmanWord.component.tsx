@@ -1,12 +1,16 @@
 import './HangmanWord.styles.css'
 
-const word = "test"
+type HangmanWordProps = {
+    guessedLetters: string[]
+    wordToGuess: string
+}
 
-export function HangmanWord() {
+export function HangmanWord({ guessedLetters, wordToGuess }: HangmanWordProps) {
+
     return <div className="word-container">
-        {word.split("").map((letter, index) => (
-            <span className='split-word'>
-                <span className='status-word'>
+        {wordToGuess.split("").map((letter, index) => (
+            <span className='split-word' key={index}>
+                <span style={{ visibility: guessedLetters.includes(letter) ? "visible" : "hidden", }}>
                     {letter}
                 </span>
             </span>

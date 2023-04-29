@@ -22,14 +22,16 @@ const rightLeg = (
 const leftLeg = (
     <div className='draw-leftleg' />
 )
-export function HangmanDrwaing() {
+
+const BODY_PARTS = [head, body, rightArm, leftArm, rightLeg, leftLeg]
+
+type HangmanDrawingProps = {
+    numberOfGuesses: number
+}
+
+export function HangmanDrwaing({ numberOfGuesses }: HangmanDrawingProps) {
     return <div className="draw-container">
-        {head}
-        {body}
-        {rightArm}
-        {leftArm}
-        {rightLeg}
-        {leftLeg}
+        {BODY_PARTS.slice(0, numberOfGuesses)}
         <div className='draw-drop' />
         <div className='draw-top' />
         <div className='draw-vertical' />
