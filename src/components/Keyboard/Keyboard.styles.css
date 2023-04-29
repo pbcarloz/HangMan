@@ -30,14 +30,34 @@
     color: rgb(44, 44, 44);
 }
 
-.button.active {
+.button-styled-active {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    cursor: pointer;
+    color: rgb(44, 44, 44);
     background-color: hsl(200, 100%, 50%);
     ;
 }
 
-.button.inactive {
+.button-styled-inactive {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: none;
+    aspect-ratio: 1 / 1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    cursor: pointer;
+    color: rgb(44, 44, 44);
     opacity: .3;
 }
+
 
 .button-styled:hover:not(:disabled),
 .button-styled:focus:not(:disabled) {
