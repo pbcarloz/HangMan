@@ -2,7 +2,6 @@
   "name": "colgado",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://pbcarloz.github.io/HangMan",
   "type": "module",
   "scripts": {
     "dev": "vite",
